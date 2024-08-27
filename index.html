@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My GitHub Pages Site</title>
+  <link rel="stylesheet" href="style.css"> <script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/dist/markdown-it.min.js"></script>
+</head>
+<body>
+  <div id="markdown-content"></div>
+  <script>
+    var md = new markdownit();
+    fetch('privacy_policy.md')
+      .then(response => response.text())
+      .then(text => {
+        var html = md.render(text);
+        document.getElementById('markdown-content').innerHTML = html;
+      });
+  </script>
+</body>
+</html>
