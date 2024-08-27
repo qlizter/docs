@@ -1,4 +1,4 @@
-# Qlizter Privacy Policy
+# Qlizter Terms and Conditions
 
 ---
 
